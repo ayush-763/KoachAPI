@@ -17,7 +17,6 @@ function displayTodoDetails(todo) {
   todoDetails.innerHTML = `
         <h2>Task Details</h2>
         <p id="tlt"><strong>Title:</strong> ${todo.title}</p>
-        <p><strong>Completed:</strong> ${todo.completed ? "Yes" : "No"}</p>
         <p id="tlt"><strong>User-id:</strong> ${todo.userId}</p>
         <div class="btns">
         ${
