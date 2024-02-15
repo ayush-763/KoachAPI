@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+.heading{
+    padding: 20px 30px;
+    background-color: black;
+}
+
+.heading .container h1{
+    color:#fff;
+    text-align: center;
+}
+
+.main{
+    padding: 20px 30px;
+    background: #919191;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.main .container{
+    background: #fff;
+    border-radius: 25px;
+    margin: 32px;
+    height: 75vh;
+    display: flex;
+    padding: 20px 30px;
+    max-width: 100%;
+}
+
+.main .container .left{
+    width:50%;
+    /* text-align: center; */
+    overflow: auto;
+}
+
+.main .container .left ul{
+    list-style: none;
+} 
+
+.main .container .left ul li{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom:15px;
+    cursor: pointer;
+}
+
+.main .container .right{
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.main .container .right #tlt{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-wrap: wrap;
+}
+
+.main .container .right .btns{
+    display: flex;
+}
+
+.main .container .right #completed{
+    cursor: pointer;
+    background-color: rgb(12, 201, 12);
+    color: white;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+
+}
+
+.main .container .right #markCompleted{
+    cursor: pointer;
+    background-color: rgb(14, 1, 195);
+    color: white;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.main .container .right #delete{
+    cursor: pointer;
+    background-color: rgb(211, 0, 0);
+    color: white;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
