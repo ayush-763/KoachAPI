@@ -41,8 +41,6 @@ function markCompleted(todoId) {
   })
     .then((response) => response.json())
     .then((updatedTodo) => {
-      // Update UI or perform any necessary actions
-      // displayTodoDetails(todoId);
       document.getElementById("markCompleted").id = "completed";
       document.getElementById("completed").innerHTML = "Completed";
       document.getElementById("status").innerHTML = "Yes";
@@ -52,19 +50,16 @@ function markCompleted(todoId) {
     .catch((error) => console.error("Error marking todo as completed:", error));
 }
 
-// Function to delete a todo
 function deleteTodo(todoId) {
   fetch(`https://jsonplaceholder.typicode.com/todos/${todoId}`, {
     method: "DELETE",
   })
     .then((response) => {
       if (response.ok) {
-        // Remove the todo from the UI
         const todoItem = document.querySelector(
           `.todo-item[data-id="${todoId}"]`
         );
         todoItem.remove();
-        // Clear todo details
         document.getElementById("todo-details").innerHTML = "";
         console.log("Todo deleted successfully");
       } else {
