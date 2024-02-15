@@ -46,7 +46,7 @@ function markCompleted(todoId) {
       // displayTodoDetails(todoId);
       document.getElementById("markCompleted").id = "completed";
       document.getElementById("completed").innerHTML = "Completed";
-
+      document.getElementById("status").innerHTML = "Yes";
       console.log("Todo marked as completed:", updatedTodo);
     })
 
